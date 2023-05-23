@@ -1,0 +1,47 @@
+#########################
+The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is correct, is obtained by cancelling the 9s.
+
+We shall consider fractions like, 30/50 = 3/5, to be trivial examples.
+
+There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator.
+
+If the product of these four fractions is given in its lowest common terms, find the value of the denominator.
+#########################
+
+SOLUTION:
+Because both the numberator and denominator have two digits each, and only one is going to be cancelled out, then we have four possibilities
+to consider
+
+let a and b be the non cancelled digits, and c be the digit that will be cancelled out.
+We are left with 4 equations.
+
+PREREQUISITE:
+1 <= a < b <= 9 and 1 <= c <= 9
+This inequality limits the fraction to be less than 1 as per the instructions.
+
+10c + a / 10c + b = a / b
+10a + c / 10b + c = a / b
+10a + c / 10c + b = a / b
+10c + a / 10b + c = a / b
+
+EQUATION 1:
+
+10c + a / 10c + b =  a / b
+10c + a = 10ac + ab / b
+10bc + ab = 10ac + ab
+b = a
+
+This contradicts our original prerequisite and so is not a solution
+
+EQUATION 2:
+
+10a + c / 10b + c = a / b
+10a + c = 10ab + ac / b
+10ab + bc = 10ab + ac
+bc = ac
+b = a
+
+This also contradicts our prerequisite and so is also not a solution
+
+EQUATION 3:
+
